@@ -11,7 +11,7 @@ if (process.env.NODE_ENV == "production") {
 const ses = new aws.SES({
     accessKeyId: secrets.AWS_KEY,
     secretAccessKey: secrets.AWS_SECRET,
-    region: "eu-east-2"
+    region: "us-east-2"
 });
 
 const createEmail = (to, subject, message) => ({
